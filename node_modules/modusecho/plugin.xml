@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="com-moduscreate-plugins-echo" version="0.0.2" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>ModusEcho</name>
+    <description>Modus Create Demo Cordova Plugin</description>
+    <license>MIT</license>
+    <keywords>cordova,demo,modus</keywords>
+    <js-module name="ModusEcho" src="www/ModusEcho.js">
+        <clobbers target="modusecho" />
+    </js-module>
+    <hook type="after_plugin_add" src="hooks/after_plugin_add.js" />
+    <platform name="browser">
+        <config-file target="config.xml" parent="/*">
+            <feature name="ModusEcho">
+                <param name="browser-package" value="ModusEcho" />
+            </feature>
+        </config-file>
+
+        <js-module src="src/browser/ModusEchoProxy.js" name="ModusEchoProxy">
+            <runs />
+        </js-module>
+    </platform>
+	<platform name="android">
+		<config-file target="config.xml" parent="/*">
+			<feature name="ModusEcho">
+				<param name="android-package" value="com.moduscreate.plugin.ModusEcho" />
+			</feature>
+		</config-file>
+        <source-file src="src/android/com/moduscreate/plugin/ModusEcho.java" target-dir="src/com/moduscreate/plugin" />
+	</platform>
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="ModusEcho">
+                <param name="ios-package" value="ModusEcho" />
+            </feature>
+        </config-file>
+        <header-file src="src/ios/ModusEcho.h" />
+        <source-file src="src/ios/ModusEcho.m" />
+    </platform>
+</plugin>

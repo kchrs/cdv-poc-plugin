@@ -1,0 +1,56 @@
+{
+  "_from": "git+https://github.com/ModusCreateOrg/cordova-plugin-example.git",
+  "_id": "modusecho@0.0.2",
+  "_inBundle": false,
+  "_integrity": "",
+  "_location": "/modusecho",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "https://github.com/ModusCreateOrg/cordova-plugin-example",
+    "rawSpec": "https://github.com/ModusCreateOrg/cordova-plugin-example",
+    "saveSpec": "git+https://github.com/ModusCreateOrg/cordova-plugin-example.git",
+    "fetchSpec": "https://github.com/ModusCreateOrg/cordova-plugin-example.git",
+    "gitCommittish": null
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "git+https://github.com/ModusCreateOrg/cordova-plugin-example.git#b4901f0158c48380c61d15cfa808a26deb1b9eaa",
+  "_spec": "https://github.com/ModusCreateOrg/cordova-plugin-example",
+  "_where": "/Users/kchristopoulos/cordova/hell/wtf",
+  "author": {
+    "name": "Modus Create"
+  },
+  "bugs": {
+    "url": "https://github.com/ModusCreateOrg/cordova-plugin-example/issues"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "com-moduscreate-plugins-echo",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "deprecated": false,
+  "description": "Modus Create Demo Cordova Plugin",
+  "homepage": "https://github.com/ModusCreateOrg/cordova-plugin-example#readme",
+  "keywords": [
+    "cordova",
+    "demo",
+    "modus",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios",
+    "cordova-browser"
+  ],
+  "license": "MIT",
+  "name": "modusecho",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ModusCreateOrg/cordova-plugin-example.git"
+  },
+  "version": "0.0.2"
+}
